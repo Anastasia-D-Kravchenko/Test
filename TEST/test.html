@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" onmouseover="opor()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="img/pngegg (3).png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/pngegg (3).png" rel="apple-touch-icon">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    *{
+        font-size: 50px;
+    }
+    :root{
+        font-family: 'Indie Flower', cursive;
+        overflow-x: hidden;
+    }
+    body {
+        overflow: hidden;
+        font-size: 52px;
+    }
+    html {
+        background-image: none;
+        overflow: auto;
+        font-family: Gilroy;
+        height: 600px;
+        overflow:hidden;
+        font-size: 52px;
+    }
+
+    h5 {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 64px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 85px;
+        color: gold;
+    }
+
+    .back {
+        display: none;
+    }
+    @media screen and (max-width: 500px) {
+        .clickme{
+            max-width: 56%;
+        }
+        .backs{
+            width: 12%;
+        }
+    }
+    #img{
+        width: 250px;
+    }
+    #fors{
+        width: 28%;
+        position: absolute;
+        transform: rotate(339deg);
+        top: 5%;
+    }
+    #fors1{
+        width: 28%;
+        position: absolute;
+        transform: rotate(20deg);
+        top: 5%;
+        left: 71%;
+    }
+    #fors2{
+        width: 28%;
+        position: absolute;
+        transform: rotate(350deg);
+        top: 42%;
+        left: 35%;
+    }
+    @media screen and (max-width: 480px) {
+        .noone{
+            width: 46%;
+        }
+        .diver2{
+            display: flex;
+    width: 80%;
+    height: 201px;
+    padding: 1%;
+    font-size: 1.9em;
+    color: gold;
+    background: #faebd7cf;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    position: absolute;
+        }
+        .clickme{
+            max-width: 37%;
+        }
+        *{
+            font-size: 23px;
+        }
+    }
+</style>
+
+<body>
+    <div class="img"></div>
+    <div class="jk">
+        <div class="bye0">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Яке джерело енергії забезпечує фотосинтез?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Вода')">Вода</button>
+                        <button class="endy noone as2" onclick="prov(2,'Вітер')">Вітер</button>
+                        <button class="endy noone as3" onclick="prov(3,'Сонячне світло')">Сонячне світло</button>
+                        <button class="endy noone as4" onclick="prov(4,'Геотермальна енергія')">Геотермальна енергія</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(1)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye1">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що перетворюють зелені рослини під час фотосинтезу?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Воду та кисень')">Воду та кисень</button>
+                        <button class="endy noone as2" onclick="prov(2,' CO2 та сонячне світло')"> CO2 та сонячне світло</button>
+                        <button class="endy noone as3" onclick="prov(3,'Пилок та воду')">Пилок та воду</button>
+                        <button class="endy noone as4" onclick="prov(4,' Азот та вуглекислий газ')"> Азот та вуглекислий газ</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(2)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye2">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що включає в себе органічний вуглець?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Сплави')">Сплави</button>
+                        <button class="endy noone as2" onclick="prov(2,'Вода')">Вода</button>
+                        <button class="endy noone as3" onclick="prov(3,'Вуглекислий газ')">Вуглекислий газ</button>
+                        <button class="endy noone as4" onclick="prov(4,'Речовини, що містяться в рослинах та тваринах')">Речовини, що містяться в рослинах та тваринах</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(3)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye3">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що роблять мікроорганізми розкладу?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Фотосинтез')">Фотосинтез</button>
+                        <button class="endy noone as2" onclick="prov(2,'Розпушують грунт')">Розпушують грунт</button>
+                        <button class="endy noone as3" onclick="prov(3,'Розкладають мертві організми, випускаючи CO2')">Розкладають мертві організми, випускаючи CO2</button>
+                        <button class="endy noone as4" onclick="prov(4,'Поглинають CO2 з атмосфери')">Поглинають CO2 з атмосфери</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(4)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye4">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що є джерелами органічного вуглецю для мікроорганізмів розкладу?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Скам\'янілості')">Скам'янілості</button>
+                        <button class="endy noone as2" onclick="prov(2,'Дим')">Дим</button>
+                        <button class="endy noone as3" onclick="prov(3,'Мертві організми та відходи')">Мертві організми та відходи</button>
+                        <button class="endy noone as4" onclick="prov(4,'Вода')">Вода</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(5)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye5">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що представляють собою скам'янілості та викопне паливо?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Вуглекислий газ')">Вуглекислий газ</button>
+                        <button class="endy noone as2" onclick="prov(2,'Органічний вуглець, що можна спалити для випуску CO2')">Органічний вуглець, що можна спалити для випуску CO2</button>
+                        <button class="endy noone as3" onclick="prov(3,'Сонячне світло')">Сонячне світло</button>
+                        <button class="endy noone as4" onclick="prov(4,'Вода')">Вода</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(6)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye6">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Який процес виконують рослини, випускаючи CO2 назад в атмосферу?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Фотосинтез')">Фотосинтез</button>
+                        <button class="endy noone as2" onclick="prov(2,'Дихання')">Дихання</button>
+                        <button class="endy noone as3" onclick="prov(3,'Ферментування')">Ферментування</button>
+                        <button class="endy noone as4" onclick="prov(4,'Синтез білка')">Синтез білка</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(7)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye7">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Як тварини випускають CO2 назад в атмосферу?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Фотосинтез')">Фотосинтез</button>
+                        <button class="endy noone as2" onclick="prov(2,'Дихання')">Дихання</button>
+                        <button class="endy noone as3" onclick="prov(3,'Спляхування')">Спляхування</button>
+                        <button class="endy noone as4" onclick="prov(4,'Транспортування')">Транспортування</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(8)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye8">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Що є джерелами CO2 в атмосфері, пов'язаними з людською діяльністю?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Фотосинтез рослин')">Фотосинтез рослин</button>
+                        <button class="endy noone as2" onclick="prov(2,'Дихання тварин')">Дихання тварин</button>
+                        <button class="endy noone as3" onclick="prov(3,'Автомобілі та заводські викиди')">Автомобілі та заводські викиди</button>
+                        <button class="endy noone as4" onclick="prov(4,'Сонячне світло')">Сонячне світло</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(9)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye9">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Як називається процес безперервного руху діоксиду вуглецю в природі?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Цикл кисню')">Цикл кисню</button>
+                        <button class="endy noone as2" onclick="prov(2,'Цикл води')">Цикл води</button>
+                        <button class="endy noone as3" onclick="prov(3,'Цикл CO2')">Цикл CO2</button>
+                        <button class="endy noone as4" onclick="prov(4,'Цикл азоту')">Цикл азоту</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(10)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye10">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Відповіді</div>
+                    <p class="gjoh" style="text-align: initial;">
+                        <div class="diver2 fd0">
+                            <div class="diver1">
+                                Яке джерело енергії забезпечує фотосинтез?    <b class="b1" onmouseenter="myFunction(0)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(1)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd1 fd">
+                            <div class="diver1">
+                                Що перетворюють зелені рослини під час фотосинтезу?    <b class="b2" onmouseenter="myFunction(1)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(2)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd2 fd">
+                            <div class="diver1">
+                                Що включає в себе органічний вуглець?    <b class="b3" onmouseenter="myFunction(2)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(1)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(3)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd3 fd">
+                            <div class="diver1">
+                                Що роблять мікроорганізми розкладу?    <b class="b4" onmouseenter="myFunction(3)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(2)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(4)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd4 fd">
+                            <div class="diver1">
+                                Що є джерелами органічного вуглецю для мікроорганізмів розкладу?    <b class="b5" onmouseenter="myFunction(4)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(3)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(5)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd5 fd">
+                            <div class="diver1">
+                                Що представляють собою скам'янілості та викопне паливо?    <b class="b6" onmouseenter="myFunction(5)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(4)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(6)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd6 fd">
+                            <div class="diver1">
+                                Який процес виконують рослини, випускаючи CO2 назад в атмосферу?    <b class="b7" onmouseenter="myFunction(6)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(5)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(7)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd7 fd">
+                            <div class="diver1">
+                                Як тварини випускають CO2 назад в атмосферу?    <b class="b8" onmouseenter="myFunction(7)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(6)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(8)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd8 fd">
+                            <div class="diver1">
+                                Що є джерелами CO2 в атмосфері, пов'язаними з людською діяльністю?    <b class="b9" onmouseenter="myFunction(8)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(7)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd9 fd">
+                            <div class="diver1">
+                                Як називається процес безперервного руху діоксиду вуглецю в природі?    <b class="b10" onmouseenter="myFunction(9)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(8)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="forsnackbar"><div id="snackbar"></div></div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
